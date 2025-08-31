@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form id="bmiForm" action="calculate.php" method="POST">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" name="weight" id="weight" placeholder="Enter your weight" required>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" name="height" id="height" placeholder="Enter your height" required>
+
+            <div class="buttons">
+                <button type="button" onclick="calculateBMI()">Calculate (JS)</button>
+                <button type="submit">Calculate (PHP)</button>
+            </div>
+        </form>
+
+        <div id="result"></div>
+
+        <div class="chart">
+            <h3>BMI Categories</h3>
+            <ul>
+                <li><span class="underweight"></span> Underweight: &lt; 18.5</li>
+                <li><span class="normal"></span> Normal weight: 18.5 - 24.9</li>
+                <li><span class="overweight"></span> Overweight: 25 - 29.9</li>
+                <li><span class="obese"></span> Obese: ≥ 30</li>
+            </ul>
+        </div>
+
+        <div id="history" style="margin-top: 20px; text-align:left;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
