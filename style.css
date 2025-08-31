@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    flex: 1;
+    margin: 5px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.chart {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.chart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.chart li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.chart span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.underweight { background: #87CEEB; }
+.normal { background: #28a745; }
+.overweight { background: #ffc107; }
+.obese { background: #dc3545; }
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    button {
+        margin: 5px 0;
+    }
+}
